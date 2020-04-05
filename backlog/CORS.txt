@@ -1,0 +1,2 @@
+Heb nu met @CrossOrigin(origins = "http://localhost:3000") gezorgd dat ik toegang krijg vanuit de frontend.
+Mert CORSFilter oid netjes oplossen.

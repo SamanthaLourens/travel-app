@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -24,6 +23,7 @@ public class UserController {
         return "Welcome!";
     }
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/show-all-users")
     public List<User> showAllUsers(){
         return userRepository.findAll();
